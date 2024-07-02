@@ -9,16 +9,163 @@
     />
   </head>
   <body>
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-rose-900">
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+      >
+        <a href="https://flowbite.com" class="flex items-left">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            class="mr-3 h-6 sm:h-9"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Flowbite</span
+          >
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a
+            href="#"
+            class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            >Get started</a
+          >
+          <button
+            data-collapse-toggle="mobile-menu-2"
+            type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="mobile-menu-2"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <svg
+              class="hidden w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="theme-tog gle"
+            type="button"
+            style="border: 1px solid green"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+          id="mobile-menu-2"
+        >
+          <ul
+            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Company</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main class="main-section">
       <!-- The video -->
       <div class="overlay-section">
         <div class="overlay-text">
-          <h1>TENIS SPEED ARENA</h1>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-            temporibus suscipit molestias repudiandae dolorum vitae nulla
-            inventore sint illo facilis.
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            TENIS SPEED ARENA
+          </h1>
+          <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16">
+            Here at Flowbite we focus on markets where technology, innovation,
+            and capital can unlock long-term value and drive economic growth.
           </p>
         </div>
       </div>
@@ -32,122 +179,161 @@
         <button id="myBtn" onclick="myFunction()">Pause</button>
       </div>
     </main>
-    <h1>Hello World!</h1>
-    <div class="poze">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+    <!-- photo slider animated -->
+    <div class="test-slider">
+      <div class="photo-container">
+        <div class="poze">
+          <div class="scroll-container grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="scroll-column grid gap-4">
+              <div>
+                <img
+                  class="h-auto rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
 
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-              alt=""
-            />
+            <div class="scroll-column reverse grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="scroll-column grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="scroll-column reverse grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      // Get the video
-      var video = document.getElementById("myVideo");
+    <section
+      class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"
+    >
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+        >
+          We invest in the world's potential
+        </h1>
+        <p
+          class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        >
+          Here at Flowbite we focus on markets where technology, innovation, and
+          capital can unlock long-term value and drive economic growth.
+        </p>
+        <div
+          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+        >
+          <a
+            href="#"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Get started
+            <svg
+              class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </section>
 
-      // Get the button
-      var btn = document.getElementById("myBtn");
+    <script src="../js/script.js"></script>
 
-      // Pause and play the video, and change the button text
-      function myFunction() {
-        if (video.paused) {
-          video.play();
-          btn.innerHTML = "Pause";
-        } else {
-          video.pause();
-          btn.innerHTML = "Play";
-        }
-      }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </body>
 </html>
