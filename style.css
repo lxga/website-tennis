@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(18, 19, 19);
+}
+.poze {
+  display: flex;
+  margin: 0 auto;
+  width: 70vw;
+}
+/* main section || container for the video */
+.main-section {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background: red;
+  /* margin-bottom: 50px; */
+}
+/* overlay section || on top of the video */
+.overlay-section {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+}
+/* inside of the overlay section */
+.overlay-text {
+  color: whitesmoke;
+  width: 50vw;
+  background: transparent;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+}
+.overlay-text h1 {
+  font-size: 5rem;
+}
+.overlay-text p {
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.conten {
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  bottom: 15px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/* test-slider */
+.test-slider {
+  position: relative;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+
+  /* border: 30px solid transparent; */
+  /* background-color: red; */
+}
+@keyframes scroll-up {
+  0% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+
+.scroll-container {
+  display: flex;
+  height: 300px;
+}
+
+.scroll-column {
+  flex: 1;
+  animation: scroll-up 15s linear infinite;
+}
+
+.scroll-column.reverse {
+  animation: scroll-down 15s linear infinite;
+}
+
+.poze {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.photo-container {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .md\\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .md\\:grid-cols-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
