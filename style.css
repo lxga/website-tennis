@@ -326,10 +326,11 @@ h3 {
   color: white;
 }
 .box-s3 {
+  cursor: pointer;
   padding: 20px;
   margin: 10px;
-  height: 250px;
-  width: 350px;
+  height: 300px;
+  width: 450px;
   /* min-height: 250px;
   min-width: 300px; */
   background-color: rgb(241, 235, 235);
@@ -374,4 +375,63 @@ h3 {
 
 button:hover {
   transform: scale(105%);
+}
+/* section 3, choices 2, boxes */
+.choices-2 {
+  background: transparent;
+  width: 100vw;
+  min-height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.box-c2 {
+  color: white;
+  width: 280px;
+  height: 80px;
+  background-color: rgba(245, 245, 245, 0.2);
+  position: relative;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.box-c2 p {
+  margin: 0px 0px 10px 10px;
+  opacity: 75%;
+}
+.box-c2 .circle {
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: whitesmoke;
+  opacity: 75%;
+}
+.choices2-box {
+  display: flex;
+  flex-direction: row;
+}
+#navigation {
+  position: relative;
+  left: -50%;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  /* -webkit-backdrop-filter: blur(2px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.nav-container {
+  top: 20px;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  width: fit-content;
+  height: fit-content;
+}
+nav a {
+  color: black;
 }
