@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 @font-face {
   font-family: "myFont";
@@ -10,6 +11,11 @@
 body {
   background-color: rgb(18, 19, 19);
   /* font-family: myFont, sans-serif; */
+}
+h1,
+h2,
+h3 {
+  font-family: myFont, sans-serif;
 }
 .poze {
   display: flex;
@@ -199,3 +205,233 @@ body {
     background-clip: text; 
 }
  */
+/* section 2 */
+#section_2 {
+  margin: 80px 0px 20px 0px;
+  max-height: 90vh;
+  min-height: 500px;
+}
+#section_2 h2 {
+  font-size: 6rem;
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  margin-top: 2rem;
+
+  width: 100vw;
+  /* max-width: 1536px; */
+  margin-inline: auto;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.itemLeft,
+.itemRight {
+  width: 300px;
+  height: 200px;
+  background-color: #e11d48;
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.itemLeft {
+  left: max(calc(300px * 8), 100%);
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: max(calc(300px * 8), calc(100% + 300px));
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+/* section 3 */
+
+#section_3 {
+  margin: 80px 0px 80px 0px;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  /* width: 90vw; */
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+#section_3 h2 {
+  font-size: 6rem;
+  color: white;
+}
+.box-s3 {
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px;
+  height: 300px;
+  width: 450px;
+  /* min-height: 250px;
+  min-width: 300px; */
+  background-color: rgb(241, 235, 235);
+  /* border: 2px solid black; */
+  border-radius: 12px;
+  position: relative;
+  transform: scale(85%);
+  transition: 1s;
+}
+.box-s3:hover {
+  transform: scale(100%);
+}
+.circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+}
+.box-s3 h3 {
+  font-size: 4rem;
+  margin-top: 15px;
+}
+.box-s3 p {
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+
+.box-s3 button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: black;
+  border-radius: 8px;
+  color: whitesmoke;
+  width: 135px;
+  height: 35px;
+}
+
+button:hover {
+  transform: scale(105%);
+}
+/* section 3, choices 2, boxes */
+.choices-2 {
+  background: transparent;
+  width: 100vw;
+  min-height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.box-c2 {
+  color: white;
+  width: 280px;
+  height: 80px;
+  background-color: rgba(245, 245, 245, 0.2);
+  position: relative;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.box-c2 p {
+  margin: 0px 0px 10px 10px;
+  opacity: 75%;
+}
+.box-c2 .circle {
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: whitesmoke;
+  opacity: 75%;
+}
+.choices2-box {
+  display: flex;
+  flex-direction: row;
+}
+#navigation {
+  position: relative;
+  left: -50%;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  /* -webkit-backdrop-filter: blur(2px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.nav-container {
+  top: 20px;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  width: fit-content;
+  height: fit-content;
+}
+nav a {
+  color: black;
+}
