@@ -9,7 +9,7 @@ const video = document.getElementById("myVideo");
 // Get the button
 const btn = document.getElementById("myBtn");
 
-console.log(video.paused);
+// console.log(video.paused);
 // Pause and play the video, and change the button text
 function myFunction() {
   if (video.paused) {
@@ -20,6 +20,7 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
+
 /* blur when hover the login */
 const loginBtn = document.querySelector(".loginBtn");
 const page = document.querySelector(".all-page-effect");
