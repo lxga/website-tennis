@@ -12,16 +12,21 @@ body {
   background-color: rgb(18, 19, 19);
   /* font-family: myFont, sans-serif; */
 }
+/* navigation custom styles */
+.loginBtn {
+  padding: 10px 16px 10px 16px;
+}
+.loginBtn:hover {
+  background: rgba(245, 245, 245, 0.4);
+  color: black;
+}
+
 h1,
 h2,
 h3 {
   font-family: myFont, sans-serif;
 }
-.poze {
-  display: flex;
-  margin: 0 auto;
-  width: 70vw;
-}
+
 /* main section || container for the video */
 .main-section {
   position: relative;
@@ -57,6 +62,7 @@ h3 {
   margin: 0 0 20px 30px;
 }
 .overlay-text h1 {
+  margin: 0px;
   font-size: 4.5rem;
   font-family: myFont, sans-serif;
 }
@@ -75,7 +81,8 @@ h3 {
   text-align: center;
   border-radius: 8px;
   border: 2px solid whitesmoke;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -414,27 +421,119 @@ button:hover {
   flex-direction: row;
 }
 #navigation {
+  position: fixed;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#navigation a {
+  color: whitesmoke;
+  font-weight: 600;
+}
+.nav-container {
+  z-index: 100;
+}
+/* section 4 team page */
+
+.team-section {
+  width: 100vw;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0px 80px 0px;
+}
+.team-section h2 {
+  color: whitesmoke;
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+.team-container {
+  width: 90vw;
+  /* heigth: 100%; */
+  background: transparent;
   position: relative;
-  left: -50%;
-  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.row-person1,
+.row-person2 {
+  background: transparent;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.person-card {
+  width: 250px;
+  height: 350px;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
-  /* -webkit-backdrop-filter: blur(2px); */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  overflow: hidden;
+
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
 }
-.nav-container {
-  top: 20px;
-  position: fixed;
-  z-index: 100;
-  left: 50%;
-  width: fit-content;
-  height: fit-content;
+.person-card h4 {
+  color: whitesmoke;
+  opacity: 75%;
+  padding: 10px;
 }
-nav a {
+.person-card p {
+  color: whitesmoke;
+  opacity: 75%;
+  padding: 10px;
+}
+.person-card img {
+  width: 100%;
+  background: transparent;
+}
+.about-person {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  top: 100%;
+  left: 0;
+  opacity: 1;
+  transition: 0.6s;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.about-person p {
   color: black;
 }
+
+.person-card:hover .about-person {
+  opacity: 1;
+  cursor: pointer;
+  top: 0;
+}
+
+.person-card:hover {
+  scale: 110%;
+}
+/* for mobile/tablet version add popup containers for info */
+=======
 :root {
   --crsl-bg: transparent;
   --box-bg: #1e272e;
@@ -619,3 +718,4 @@ nav a {
     height: 100%;
     object-fit: cover; 
   }
+
