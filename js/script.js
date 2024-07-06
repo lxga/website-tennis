@@ -20,3 +20,14 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
+/* blur when hover the login */
+const loginBtn = document.querySelector(".loginBtn");
+const page = document.querySelector(".all-page-effect");
+
+loginBtn.addEventListener("mouseover", () => {
+  page.style.filter = "blur(8px)";
+});
+
+loginBtn.addEventListener("mouseout", () => {
+  page.style.filter = "blur(0px)";
+});
