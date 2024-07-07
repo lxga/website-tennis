@@ -22,9 +22,9 @@ function myFunction() {
 }
 
 /* blur when hover the login */
-const loginBtn = document.querySelector(".loginBtn");
+/*const loginBtn = document.querySelector(".loginBtn");
 const page = document.querySelector(".all-page-effect");
-
+*/
 /* hamburger menu */
 
 document.querySelector(".hamburger").addEventListener("click", function () {
