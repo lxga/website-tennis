@@ -52,10 +52,8 @@ nav:hover {
 }
 
 .logo {
-  height: 80%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  max-width:60px;
 }
 .logo img {
   height: 100%;
