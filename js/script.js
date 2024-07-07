@@ -25,10 +25,13 @@ function myFunction() {
 const loginBtn = document.querySelector(".loginBtn");
 const page = document.querySelector(".all-page-effect");
 
-loginBtn.addEventListener("mouseover", () => {
-  page.style.filter = "blur(8px)";
-});
+/* hamburger menu */
 
-loginBtn.addEventListener("mouseout", () => {
-  page.style.filter = "blur(0px)";
+document.querySelector(".hamburger").addEventListener("click", function () {
+  var mobileMenu = document.getElementById("mobileMenu");
+  if (mobileMenu.style.display === "flex") {
+    mobileMenu.style.display = "none";
+  } else {
+    mobileMenu.style.display = "flex";
+  }
 });

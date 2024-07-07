@@ -20,6 +20,96 @@ body {
   background-color: rgb(18, 19, 19);
   /* font-family: myFont, sans-serif; */
 }
+/* new navigation */
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  z-index: 3;
+  width: 100vw;
+}
+
+nav:hover {
+  background: rgba(245, 245, 245, 0.3);
+}
+
+.left-links,
+.right-links {
+  display: flex;
+}
+
+.left-links a,
+.right-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 25px;
+  font-family: myFont, sans-serif;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Media Query for Tablet and Mobile */
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: myFont, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background: red;
+  }
+  .left-links,
+  .right-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* new navigation */
+
 /* navigation custom styles */
 .loginBtn {
   padding: 10px 16px 10px 16px;
@@ -102,8 +192,6 @@ h3 {
   bottom: 0;
   width: 100%;
   /* height: 100%; */
-}
-.main-section video {
 }
 
 /* Add some content at the bottom of the video/page */
@@ -208,22 +296,6 @@ h3 {
   }
 }
 
-/* .main-section h1,
-.main-section .h1 {
-   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
-  font-family: myFont, sans-serif; 
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  
-   background: linear-gradient(rgba(255, 255, 255, 1), rgba(209, 255, 6, 1) 90%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text; 
-}
- */
 /* section 2 */
 #section_2 {
   margin: 80px 0px 20px 0px;
@@ -439,23 +511,6 @@ button:hover {
 .choices2-box {
   display: flex;
   flex-direction: row;
-}
-#navigation {
-  position: fixed;
-
-  background: rgba(255, 255, 255, 0.25);
-
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-#navigation a {
-  color: whitesmoke;
-  font-weight: 600;
-}
-.nav-container {
-  z-index: 100;
 }
 /* section 4 team page */
 
