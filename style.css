@@ -95,7 +95,7 @@ nav:hover {
   font-family: myFont, sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   nav {
     background: red;
   }
