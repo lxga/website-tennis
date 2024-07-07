@@ -115,6 +115,9 @@ nav:hover {
   .logo {
     left: 35px;
   }
+  .logo img {
+    left: 35px;
+  }
 }
 
 /* new navigation */
@@ -314,7 +317,7 @@ h3 {
 }
 #section_2 h2 {
   font-size: 6rem;
-  margin-bottom: 80px;
+  margin: 0 20px 80px 20px;
 }
 
 .wrapper {
