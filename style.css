@@ -52,16 +52,23 @@ nav:hover {
 }
 
 .logo {
+  /* background: red; */
+  height: 80%;
   color: #fff;
   font-size: 24px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
+.logo img {
+  height: 100%;
+}
 
 .hamburger {
   display: none;
   flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
   cursor: pointer;
 }
 
@@ -97,7 +104,8 @@ nav:hover {
 
 @media screen and (max-width: 980px) {
   nav {
-    background: red;
+    background: rgba(245, 245, 245, 0.3);
+    height: 60px;
   }
   .left-links,
   .right-links {
@@ -105,6 +113,9 @@ nav:hover {
   }
   .hamburger {
     display: flex;
+  }
+  .logo {
+    left: 35px;
   }
 }
 
