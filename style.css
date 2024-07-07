@@ -4,6 +4,14 @@
   box-sizing: border-box;
   transition: 0.5s;
 }
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;  
+}
 @font-face {
   font-family: "myFont";
   src: url("/assets/Fontspring-DEMO-bebasneuepro-expeb.otf");
