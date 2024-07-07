@@ -8,8 +8,55 @@
       rel="stylesheet"
     />
   </head>
-  <body class="subpixel-antialiased haha">
-    <div
+  <body>
+    <nav>
+      <div class="left-links">
+        <a href="#">DESPRE</a>
+        <a href="#">ANTRENORI</a>
+      </div>
+      <div class="logo">LOGO</div>
+      <div class="right-links">
+        <a href="#">CONTACT</a>
+        <a href="#">REZERVA</a>
+      </div>
+      <!--   <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div> -->
+    </nav>
+    <button
+      data-collapse-toggle="mobileMenu"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="mobileMenu"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"
+        />
+      </svg>
+    </button>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">DESPRE</a>
+      <a href="#">ANTRENORI</a>
+      <a href="#">CONTACT</a>
+      <a href="#">REZERVA</a>
+    </div>
+    <!-- <div
       class="nav-container hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
     >
       <nav
@@ -105,7 +152,7 @@
           </div>
         </div>
       </nav>
-    </div>
+    </div> -->
     <div class="all-page-effect">
       <main class="main-section">
         <!-- The video -->
