@@ -27,15 +27,15 @@ nav {
   top: 0;
   justify-content: space-between;
   align-items: center;
-  background: rgba(245, 245, 245, 0.3);
+  background-color: transparent;
   padding: 10px 20px;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
 }
-/* 
+
 nav:hover {
   background: rgba(245, 245, 245, 0.3);
-} */
+}
 
 .left-links,
 .right-links {
@@ -59,34 +59,23 @@ nav:hover {
   transform: translateX(-50%);
 }
 
-/* .hamburger {
+.hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-} */
+}
 
-/* .hamburger .bar {
+.hamburger .bar {
   width: 25px;
   height: 3px;
   background-color: #fff;
   margin: 4px 0;
   transition: 0.4s;
-} */
-
-/* Media Query for Tablet and Mobile */
-@media (max-width: 768px) {
-  .left-links,
-  .right-links {
-    display: none;
-    background-color: red;
-  }
-
-  /* .hamburger {
-    display: flex;
-  } */
 }
 
-/* .mobile-menu {
+/* Media Query for Tablet and Mobile */
+
+.mobile-menu {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -104,7 +93,20 @@ nav:hover {
   margin: 10px 0;
   font-size: 25px;
   font-family: myFont, sans-serif;
-} */
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background: red;
+  }
+  .left-links,
+  .right-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
 
 /* new navigation */
 
@@ -509,23 +511,6 @@ button:hover {
 .choices2-box {
   display: flex;
   flex-direction: row;
-}
-#navigation {
-  position: fixed;
-
-  background: rgba(255, 255, 255, 0.25);
-
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-#navigation a {
-  color: whitesmoke;
-  font-weight: 600;
-}
-.nav-container {
-  z-index: 100;
 }
 /* section 4 team page */
 
