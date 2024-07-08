@@ -54,14 +54,6 @@ nav:hover {
   font-family: myFont, sans-serif;
 }
 
-.logo {
-  position: relative;
-  max-width:60px;
-}
-.logo img {
-  height: 100%;
-  width: auto;
-}
 
 .hamburger {
   display: none;
