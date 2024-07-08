@@ -677,20 +677,17 @@ button:hover {
   --box-border: #fff;
 }
 
-#slider {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgb(47, 53, 57);
-  background: radial-gradient(
-    circle,
-    rgba(47, 53, 57, 1) 0%,
-    rgba(30, 39, 46, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539", endColorstr="#1e272e", GradientType=1);
+.slider {
+  width: 100vw;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0px 160px 0px;
 }
-#slider p {
+.slider p {
   font-size: 0.95em;
   font-weight: bold;
   position: absolute;
@@ -703,8 +700,14 @@ button:hover {
   user-select: none;
 }
 
-#slider .carousel {
-  padding-top: 125px;
+.slider h2 {
+  color: whitesmoke;
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+.slider .carousel {
+  padding-top: 50px;
+  margin-bottom: 100px;
 }
 
 .carousel {
