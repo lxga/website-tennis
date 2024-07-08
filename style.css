@@ -78,7 +78,7 @@ nav:hover {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  top: 50px;
+  top: 10rem;
   left: 0;
   right: 0;
   z-index: 4;
@@ -88,14 +88,24 @@ nav:hover {
   text-decoration: none;
   color: #fff;
   margin: 10px 0;
-  font-size: 25px;
+  font-size: 4rem;
+  border-bottom: 1px solid whitesmoke;
+  width: 95%;
+  text-align: center;
   font-family: myFont, sans-serif;
+}
+.mobile-menu a:last-child {
+  margin-bottom: 0px;
+}
+.logo {
+  height: 4rem;
 }
 
 @media screen and (max-width: 980px) {
   nav {
     background: rgba(245, 245, 245, 0.3);
-    height: 60px;
+    height: 10rem;
+    padding: 4rem 4rem;
   }
   .left-links,
   .right-links {
@@ -104,10 +114,16 @@ nav:hover {
   .hamburger {
     display: flex;
   }
-  .logo {
-    left: 35px;
+  .hamburger .bar {
+    width: 4rem;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
   }
-  .logo img {
+
+  .logo {
+    height: 6rem;
     left: 35px;
   }
 }
@@ -137,6 +153,9 @@ h3 {
   /* background: red; */
   display: flex;
   /* margin-bottom: 50px; */
+}
+.h-screen {
+  height: 100dvh;
 }
 /* overlay section || on top of the video */
 .overlay-section {
@@ -302,16 +321,20 @@ h3 {
 
 /* section 2 */
 .section2_class {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  /* height: 60vh; */
 }
+
 #section_2 {
   /* margin: 80px 0px 20px 0px; */
+
   max-height: 90vh;
   min-height: 500px;
   max-height: 700px;
 }
-#section_2 h2 {
+
+.section2_class h2 {
   font-size: 6rem;
   margin: 0 20px 80px 20px;
 }
@@ -419,6 +442,8 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .choices {
   display: flex;
@@ -463,11 +488,12 @@ h3 {
   background: black;
 }
 .box-s3 h3 {
-  font-size: 4rem;
+  font-size: 6rem;
   margin-top: 15px;
 }
 .box-s3 p {
-  font-size: 1.5rem;
+  font-family: initial;
+  font-size: 3rem;
   margin-top: -10px;
 }
 
@@ -478,8 +504,10 @@ h3 {
   background: black;
   border-radius: 8px;
   color: whitesmoke;
-  width: 135px;
-  height: 35px;
+  width: 165px;
+  height: 45px;
+  font-size: 1.5rem;
+  font-family: initial;
 }
 
 button:hover {
@@ -498,8 +526,8 @@ button:hover {
 }
 .box-c2 {
   color: white;
-  width: 280px;
-  height: 80px;
+  width: 380px;
+  height: 90px;
   background-color: rgba(245, 245, 245, 0.2);
   position: relative;
   border-radius: 10px;
@@ -508,13 +536,16 @@ button:hover {
   align-items: flex-end;
 }
 .box-c2 p {
+  font-family: initial;
   margin: 0px 0px 10px 10px;
   opacity: 75%;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 .box-c2 .circle {
   left: 0;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: whitesmoke;
   opacity: 75%;
 }
@@ -532,7 +563,8 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 80px 0px 80px 0px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .team-section h2 {
   color: whitesmoke;
@@ -550,14 +582,28 @@ button:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
-.row-person1,
-.row-person2 {
-  background: transparent;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
+
+@media screen and (max-width: 980px) {
+  .row-person1,
+  .row-person2,
+  .row-person3 {
+    background: transparent;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .person-card {
+    min-width: 360px;
+    min-height: 500px;
+  }
+  .about-person {
+    min-width: 360px;
+    min-height: 500px;
+  }
 }
+
 .person-card {
   width: 250px;
   height: 350px;
@@ -578,52 +624,13 @@ button:hover {
 .person-card h4 {
   color: whitesmoke;
   opacity: 75%;
-  padding: 10px;
+
+  font-size: 2.8rem;
 }
 .person-card p {
   color: whitesmoke;
   opacity: 75%;
-  padding: 10px;
-}
-.person-card img {
-  width: 100%;
-  background: transparent;
-}
-
-.row-person1,
-.row-person2 {
-  background: transparent;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.person-card {
-  width: 250px;
-  height: 350px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-
-  overflow: hidden;
-
-  position: relative;
-  text-align: center;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-}
-.person-card h4 {
-  color: whitesmoke;
-  opacity: 75%;
-  padding: 10px;
-}
-.person-card p {
-  color: whitesmoke;
-  opacity: 75%;
-  padding: 10px;
+  font-size: 1.5rem;
 }
 .person-card img {
   width: 100%;
@@ -640,13 +647,16 @@ button:hover {
   transition: 0.6s;
   border-radius: 10px;
 
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.45);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  /* border: 2px solid rgba(255, 255, 255, 0.3); */
 }
 .about-person p {
+  line-height: 2rem;
   color: black;
+  padding: 10px;
+  font-size: 1.8rem;
 }
 
 .person-card:hover .about-person {
@@ -875,6 +885,7 @@ button:hover {
   padding: 30px 0px;
   font-family: "Play", sans-serif;
   text-align: center;
+  margin-top: 80px;
 }
 
 .footer .row {
